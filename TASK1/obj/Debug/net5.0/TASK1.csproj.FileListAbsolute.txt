@@ -1,0 +1,16 @@
+D:\C#_practice\TASK1\TASK1\bin\Debug\net5.0\TASK1.exe
+D:\C#_practice\TASK1\TASK1\bin\Debug\net5.0\TASK1.deps.json
+D:\C#_practice\TASK1\TASK1\bin\Debug\net5.0\TASK1.runtimeconfig.json
+D:\C#_practice\TASK1\TASK1\bin\Debug\net5.0\TASK1.runtimeconfig.dev.json
+D:\C#_practice\TASK1\TASK1\bin\Debug\net5.0\TASK1.dll
+D:\C#_practice\TASK1\TASK1\bin\Debug\net5.0\ref\TASK1.dll
+D:\C#_practice\TASK1\TASK1\bin\Debug\net5.0\TASK1.pdb
+D:\C#_practice\TASK1\TASK1\obj\Debug\net5.0\TASK1.csprojAssemblyReference.cache
+D:\C#_practice\TASK1\TASK1\obj\Debug\net5.0\TASK1.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#_practice\TASK1\TASK1\obj\Debug\net5.0\TASK1.AssemblyInfoInputs.cache
+D:\C#_practice\TASK1\TASK1\obj\Debug\net5.0\TASK1.AssemblyInfo.cs
+D:\C#_practice\TASK1\TASK1\obj\Debug\net5.0\TASK1.csproj.CoreCompileInputs.cache
+D:\C#_practice\TASK1\TASK1\obj\Debug\net5.0\TASK1.dll
+D:\C#_practice\TASK1\TASK1\obj\Debug\net5.0\ref\TASK1.dll
+D:\C#_practice\TASK1\TASK1\obj\Debug\net5.0\TASK1.pdb
+D:\C#_practice\TASK1\TASK1\obj\Debug\net5.0\TASK1.genruntimeconfig.cache
