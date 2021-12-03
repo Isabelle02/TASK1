@@ -1,8 +1,6 @@
-﻿
-
-namespace TASK1
+﻿namespace TASK1
 {
-    internal static class Program
+    public static class Program
     {
         private static void Main(string[] args)
         {
@@ -20,9 +18,9 @@ namespace TASK1
             // MaxInColumns.Task12();
             // ChangeMasDiagonals.Task13();
             // AmountA.Task14();
-             WordsAmount.Task15();
+            // WordsAmount.Task15();
             // StringReverse.Task16();
-            // ChangingConE.Task17();
+            // ChangeLetters.Task17();
             // AmountStartK.Task18();
         }
     }

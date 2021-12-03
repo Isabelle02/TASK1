@@ -8,11 +8,7 @@ namespace TASK1
     {
         private static int _range;
 
-        private static void Read()
-        {
-            do Console.Write("Input the range upper bound: ");
-            while (!TryParse(Console.ReadLine(), out _range));
-        }
+        private static void Read() => Tools.InputInt("Input the range upper bound: ", out _range);
 
         private static List<int> FindPerfectNums(int range)
         {
@@ -37,6 +33,7 @@ namespace TASK1
         private static void Show(List<int> perfectNums)
         {
             Console.Write("Found perfect numbers: ");
+            
             foreach (var n in perfectNums)
                 Console.Write(n + " ");
 

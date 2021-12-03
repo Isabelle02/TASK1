@@ -11,38 +11,35 @@ namespace TASK1
 
         private static void Read()
         {
-            do Console.Write("Input amount of numbers: ");
-            while (!TryParse(Console.ReadLine(), out _amount) || _amount < 0);
+            do 
+                Tools.InputInt("Input amount of numbers: ", out _amount);
+            while (_amount < 0);
             
-            do Console.Write("Input start number: ");
-            while (!TryParse(Console.ReadLine(), out _startNum));
+            Tools.InputInt("Input start number: ", out _startNum);
             
-            do Console.Write("Input step: ");
-            while (!TryParse(Console.ReadLine(), out _step));
+            Tools.InputInt("Input step: ", out _step);
         }
 
-        private static int FindSum(int amount, int startNum, int step)
+        private static int FindSum()
         {
             var sum = 0;
-            while (amount != 0)
+            
+            while (_amount != 0)
             {
-                sum += startNum;
-                startNum += step;
-                amount--;
+                sum += _startNum;
+                _startNum += _step;
+                _amount--;
             }
 
             return sum;
         }
 
-        private static void Show(int foundSum)
-        {
-            Console.WriteLine($"Sum of {_amount} numbers from start number {_startNum} with step {_step}: {foundSum}");
-        }
+        private static void Show(int foundSum) => Console.WriteLine($"Sum of {_amount} numbers from start number {_startNum} with step {_step}: {foundSum}");
 
         public static void Task4()
         {
             Read();
-            Show(FindSum(_amount, _startNum, _step));
+            Show(FindSum());
         }
     }
 }

@@ -24,23 +24,15 @@ namespace TASK1
             }
         }
 
-        private static void ShowMas()
-        {
-            foreach (var n in Mas)
-                Console.Write(n + " ");
-            
-            Console.WriteLine();
-        }
-
         private static void Show()
         {
             Console.Write("Sorted negative numbers in mas: ");
-            ShowMas();
+            Tools.ShowMas(Mas);
         }
 
         public static void Task8()
         {
-            ShowMas();
+            Tools.ShowMas(Mas);
             SortNegativeNums();
             Show();
         }

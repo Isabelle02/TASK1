@@ -20,34 +20,20 @@ namespace TASK1
                 {
                     if (i != j) 
                         continue;
+                    
                     (Mas[i, j], Mas[i, Mas.GetUpperBound(1) - j]) = (Mas[i, Mas.GetUpperBound(1) - j], Mas[i, j]);
                 }
-        }
-        
-        private static void ShowMas()
-        {
-            var i = -1;
-            foreach (var n in Mas)
-            {
-                Console.Write(n + "\t");
-                i++;
-                if (i != Mas.GetUpperBound(1)) continue;
-                Console.WriteLine();
-                i = -1;
-            }
-
-            Console.WriteLine();
         }
 
         private static void Show()
         {
             Console.WriteLine("Mas with changed diagonals:");
-            ShowMas();
+            Tools.ShowMas2(Mas);
         }
 
         public static void Task13()
         {
-            ShowMas();
+            Tools.ShowMas2(Mas);
             ChangeDiagonals();
             Show();
         }

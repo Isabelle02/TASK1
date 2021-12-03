@@ -6,11 +6,7 @@ namespace TASK1
     {
         private static string _str;
 
-        private static void Read()
-        {
-            Console.Write("Input string: ");
-            _str = Console.ReadLine();
-        }
+        private static void Read() => Tools.InputStr("Input string: ", out _str);
 
         private static int CountWords()
         {
@@ -18,10 +14,7 @@ namespace TASK1
             return words.Length;
         }
 
-        private static void Show()
-        {
-            Console.WriteLine("Amount of words: " + CountWords());
-        }
+        private static void Show() => Console.WriteLine("Amount of words: " + CountWords());
 
         public static void Task15()
         {

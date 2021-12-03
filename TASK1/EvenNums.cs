@@ -10,13 +10,15 @@ namespace TASK1
 
         private static void Read()
         {
-            do Console.Write("Input the range upper bound: ");
-            while (!TryParse(Console.ReadLine(), out _range));
+            do 
+                Tools.InputInt("Input the range upper bound: ", out _range);
+            while (_range < 0);
         }
 
         private static List<int> FindEvenNums(int range)
         {
             var evenNums = new List<int>();
+            
             for (var i = 0; i <= range; i++)
                 if (i % 2 == 0) evenNums.Add(i);
             
@@ -26,6 +28,7 @@ namespace TASK1
         private static void Show(List<int> evenNums)
         {
             Console.Write("Found even numbers: ");
+            
             foreach (var n in evenNums)
                 Console.Write(n + " ");
             

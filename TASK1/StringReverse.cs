@@ -7,21 +7,11 @@ namespace TASK1
     {
         private static string _str;
 
-        private static void Read()
-        {
-            Console.Write("Input string: ");
-            _str = Console.ReadLine();
-        }
+        private static void Read() => Tools.InputStr("Input string: ", out _str);
 
-        private static string Reverse(string str)
-        {
-            return (string) str.Reverse();
-        }
+        private static string Reverse(string str) => (string) str.Reverse();
 
-        private static void Show(string reversedStr)
-        {
-            Console.WriteLine("Reversed string: " + reversedStr);
-        }
+        private static void Show(string reversedStr) => Console.WriteLine("Reversed string: " + reversedStr);
 
         public static void Task16()
         {

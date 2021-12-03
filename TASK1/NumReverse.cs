@@ -9,11 +9,7 @@ namespace TASK1
     {
         private static int _num;
 
-        private static void Read()
-        {
-            do Console.Write("Input number: ");
-            while (!TryParse(Console.ReadLine(), out _num));
-        }
+        private static void Read() => Tools.InputInt("Input number: ", out _num);
 
         private static int Reverse(int num)
         {
@@ -28,10 +24,7 @@ namespace TASK1
             return num;
         }
 
-        private static void Show(int reversedNum)
-        {
-            Console.WriteLine("Reversed number: " + reversedNum);
-        }
+        private static void Show(int reversedNum) => Console.WriteLine("Reversed number: " + reversedNum);
 
         public static void Task2()
         {

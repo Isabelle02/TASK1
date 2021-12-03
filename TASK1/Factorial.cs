@@ -9,28 +9,27 @@ namespace TASK1
 
         private static void Read()
         {
-            do Console.Write("Input number: ");
-            while (!TryParse(Console.ReadLine(), out _num) || _num < 0);
+            do 
+                Tools.InputInt("Input number: ", out _num);
+            while (_num < 0);
         }
 
         private static int FindFactorial(int num)
         {
             var n = 1;
-            for (var i = 1; i <= num; i++)
+            
+            for (var i = 2; i <= num; i++)
                 n *= i;
 
             return n;
         }
 
-        private static void Show(int foundFactorial)
-        {
-            Console.WriteLine("Found factorial: " + foundFactorial);
-        }
+        private static void Show() => Console.WriteLine("Found factorial: " + FindFactorial(_num));
 
         public static void Task3()
         {
             Read();
-            Show(FindFactorial(_num));
+            Show();
         }
     }
 }

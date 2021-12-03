@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using static System.Int32;
 
 namespace TASK1
@@ -18,19 +20,16 @@ namespace TASK1
             }
         }
 
-        private static int[] Sort(int[] nums)
+        private static List<int> Sort(List<int> nums)
         {
-            for (var i = 0; i < nums.Length - 1; i++)
-                for (var j = i + 1; j < nums.Length; j++)
-                    if (nums[i] > nums[j]) 
-                        (nums[i], nums[j]) = (nums[j], nums[i]);
-
+            nums.Sort();
             return nums;
         }
 
-        private static void Show(int[] nums)
+        private static void Show(List<int> nums)
         {
             Console.Write("Sorted numbers: ");
+            
             foreach (var n in nums)
                 Console.Write(n + " ");
             
@@ -40,7 +39,7 @@ namespace TASK1
         public static void Task1()
         {
             Read();
-            Show(Sort(Nums));
+            Show(Sort(Nums.ToList()));
         }
     }
 }

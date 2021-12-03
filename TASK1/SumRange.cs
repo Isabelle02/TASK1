@@ -12,39 +12,22 @@ namespace TASK1
 
         private static void Read()
         {
-            do Console.Write("Input lower bound: ");
-            while (!TryParse(Console.ReadLine(), out _lowerBound));
-            
-            do Console.Write("Input upper bound: ");
-            while (!TryParse(Console.ReadLine(), out _upperBound));
+            Tools.InputInt("Input lower bound: ", out _lowerBound);
+            Tools.InputInt("Input upper bound: ", out _upperBound);
             
             if (_lowerBound > _upperBound) 
                 (_lowerBound, _upperBound) = (_upperBound, _lowerBound);
         }
         
-        private static int Sum()
-        {
-            return Mas.Where(n => n > _lowerBound && n < _upperBound).Sum();
-        }
-        
-        private static void ShowMas()
-        {
-            foreach (var n in Mas)
-                Console.Write(n + " ");
-            
-            Console.WriteLine();
-        }
+        private static int Sum() => Mas.Where(n => n > _lowerBound && n < _upperBound).Sum();
 
-        private static void Show(int sum)
-        {
-            Console.Write($"Sum of range from {_lowerBound} to {_upperBound} in mas: {sum}");
-        }
+        private static void Show() => Console.Write($"Sum of range from {_lowerBound} to {_upperBound} in mas: {Sum()}");
 
         public static void Task10()
         {
-            ShowMas();
+            Tools.ShowMas(Mas);
             Read();
-            Show(Sum());
+            Show();
         }
     }
 }

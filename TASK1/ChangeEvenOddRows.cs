@@ -19,26 +19,11 @@ namespace TASK1
                     (Mas[i, j], Mas[i + 1, j]) = (Mas[i + 1, j], Mas[i, j]);
         }
 
-        private static void ShowMas()
-        {
-            var i = -1;
-            foreach (var n in Mas)
-            {
-                Console.Write(n + "\t");
-                i++;
-                if (i != Mas.GetUpperBound(1)) continue;
-                Console.WriteLine();
-                i = -1;
-            }
-
-            Console.WriteLine();
-        }
-
         public static void Task11()
         {
-            ShowMas();
+            Tools.ShowMas2(Mas);
             ChangeEvenOdd();
-            ShowMas();
+            Tools.ShowMas2(Mas);
         }
     }
 }
